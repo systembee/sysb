@@ -58,9 +58,9 @@
   .navbar-default {
     .navbar-header .navbar-brand {
       color: $theme-primary;
-      &:hover {
+/*       &:hover {
         color: darken($theme-primary, 25%);
-      }
+      } */
     }
     border-bottom: 1px solid rgba($theme-primary, 0.5);
     .nav > li > a,
@@ -105,6 +105,9 @@
   padding: 50px 0;
   * {
     color: $theme-dark;
+  }
+  a:hover {
+    text-decoration: none;
   }
 }
 
