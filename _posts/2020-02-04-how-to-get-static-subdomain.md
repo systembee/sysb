@@ -9,11 +9,11 @@ Apart from cool dynamic subdomain we also have functionality to have static subd
 
 1. We need to export the environment variable and we run the below command on terminal:
 ```
-export SYSB_SUBDOMAIN={{ blog.sysb_subdomain }}
+export SYSB_SUBDOMAIN={{blog.sysb_subdomain}}
 ```  
     - _For Windows Users only_
-        - If you are using cmd prompt then you can run `set SYSB_SUBDOMAIN={{ blog.sysb_subdomain }}` to set the variable
-        - If you are using Power Shell then can run `$env:SYSB_SUBDOMAIN='{{ blog.sysb_subdomain }}'` to set the variable
+        - If you are using cmd prompt then you can run `set SYSB_SUBDOMAIN={{blog.sysb_subdomain}}` to set the variable
+        - If you are using Power Shell then can run `$env:SYSB_SUBDOMAIN='{{blog.sysb_subdomain}}'` to set the variable
 1. Then we need to have below entry in `~/.ssh/config`
 ```
 Host sysb.ai
@@ -26,7 +26,7 @@ ssh -R 0:localhost:8080 demo@sysb.ai
 
 Alternatively, if we prefer ssh's command line flag of `ssh` over config file then we can also get it done as below:
 ```
-export SYSB_SUBDOMAIN={{ blog.sysb_subdomain }}
+export SYSB_SUBDOMAIN={{blog.sysb_subdomain}}
 ssh -o SendEnv=SYSB_SUBDOMAIN -R 0:localhost:8080 demo@sysb.ai
 ```
 
