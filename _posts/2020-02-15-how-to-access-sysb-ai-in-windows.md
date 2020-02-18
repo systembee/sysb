@@ -2,6 +2,7 @@
 layout: post
 title: How to access sysb.AI in Windows 7/0
 image: /img/portfolio/6.jpg
+tag: [blog]
 ---
 
 We can download the compatible ssh client from [GitHub](https://github.com/PowerShell/Win32-OpenSSH/releases)

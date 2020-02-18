@@ -2,7 +2,7 @@
 layout: post
 title: SSH Tips and Tricks
 image: /img/portfolio/4.jpg
-tag: landing-page
+tag: [landing-page, blog]
 ---
 
 SSH is not only a tool to securely login to a remote host but it has a plethora of different functionality. In this blog we intend to keep updating with new tips and tricks of SSH. If you would like to share your a tips and tricks and also wants to add here then please [contact us](mailto:hello@sysb.ai)

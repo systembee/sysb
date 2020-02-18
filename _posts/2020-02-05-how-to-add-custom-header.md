@@ -2,7 +2,7 @@
 layout: post
 title: How to add Host header?
 image: /img/portfolio/3.jpg
-tag: landing-page
+tag: [landing-page, blog]
 ---
 
 In order to run our local web application properly over internet we may require to send custom `Host:` header to our local web server. By default we send `localhost` as the `Host:` header to local web application. Though, it can be chanaged and do so we need to perform the below steps

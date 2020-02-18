@@ -3,7 +3,8 @@
 </div>
 
 <ul class="blog_content container">
-  {% for post in site.posts reversed limit:10 %}
+  {% assign posts = site.posts | where: "tag", "blog" %}
+  {% for post in posts reversed limit:10 %}
   <li class="row">
     {% if post.image %}
     <img class="col-sm-2 col-xs-12" src="{{post.image | relative_url}}" alt="{{post.title}}">
