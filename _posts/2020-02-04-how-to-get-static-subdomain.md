@@ -25,7 +25,7 @@ Host sysb.ai
 ssh -R 0:localhost:8080 demo@sysb.ai
 ```
 
-Alternatively, if we prefer ssh's command line flag of `ssh` over config file then we can also get it done as below:
+It will give us requested static subdomain like `https://{{blog.sysb_subdomain}}.us.sysb.ai` Alternatively, if we prefer ssh's command line flag over config file then we can also get it done as below:
 ```
 export SYSB_SUBDOMAIN={{blog.sysb_subdomain}}
 ssh -o SendEnv=SYSB_SUBDOMAIN -R 0:localhost:8080 demo@sysb.ai
