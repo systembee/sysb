@@ -4,17 +4,16 @@ title: How can I get static subdomain of sysb.ai?
 image: /img/portfolio/2.jpg
 tag: landing-page
 ---
-{% assign blog = site.data.blog %}
 
 Apart from cool dynamic subdomain we also have functionality to have static subdomain. We send `SYSB_SUBDOMAIN` environemnt variable via ssh client to get the static subdomain of sysb.AI. We advice you to choose a uniq subdomain as it is valid only until tunneling session. We issue a subdomain if it is available.
 
 1. We need to export the environment variable and we run the below command on terminal:
 ```
-export SYSB_SUBDOMAIN={{blog.sysb_subdomain}}
+export SYSB_SUBDOMAIN={{site.data.blog.sysb_subdomain}}
 ```  
     - _For Windows Users only_
-        - If you are using cmd prompt then you can run `set SYSB_SUBDOMAIN={{blog.sysb_subdomain}}` to set the variable
-        - If you are using Power Shell then can run `$env:SYSB_SUBDOMAIN='{{blog.sysb_subdomain}}'` to set the variable
+        - If you are using cmd prompt then you can run `set SYSB_SUBDOMAIN={{site.data.blog.sysb_subdomain}}` to set the variable
+        - If you are using Power Shell then can run `$env:SYSB_SUBDOMAIN='{{site.data.blog.sysb_subdomain}}'` to set the variable
 1. Then we need to have below entry in `~/.ssh/config`
 ```
 Host sysb.ai
@@ -25,9 +24,9 @@ Host sysb.ai
 ssh -R 0:localhost:8080 demo@sysb.ai
 ```
 
-It will give us requested static subdomain like `https://{{blog.sysb_subdomain}}.us.sysb.ai` Alternatively, if we prefer ssh's command line flag over config file then we can also get it done as below:
+It will give us requested static subdomain like `https://{{site.data.blog.sysb_subdomain}}.us.sysb.ai` Alternatively, if we prefer ssh's command line flag over config file then we can also get it done as below:
 ```
-export SYSB_SUBDOMAIN={{blog.sysb_subdomain}}
+export SYSB_SUBDOMAIN={{site.data.blog.sysb_subdomain}}
 ssh -o SendEnv=SYSB_SUBDOMAIN -R 0:localhost:8080 demo@sysb.ai
 ```
 
