@@ -1,7 +1,9 @@
 <section class="container contact_form">
   {% assign contact = site.data.contact %}
+  <!-- <form action="{{contact.action}}" method="{{contact.method}}" id="mc-embedded-subscribe-form" name="{{contact.name}}"
+    class="validate text-center" target="_blank" novalidate> -->
   <form action="{{contact.action}}" method="{{contact.method}}" id="mc-embedded-subscribe-form" name="{{contact.name}}"
-    class="validate text-center" target="_blank" novalidate>
+    class="validate text-center" novalidate>
     <h2 class="section-heading text-center">{{contact.title}}</h2>
     <hr class="primary">
     <p>{{contact.descr}}</p>
