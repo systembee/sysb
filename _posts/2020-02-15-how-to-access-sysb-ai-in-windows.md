@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to access sysb.AI in Windows 7/0
+title: How to access sysb.AI in Windows 7/10
 image: /img/portfolio/6.jpg
 tag: [blog]
 ---
