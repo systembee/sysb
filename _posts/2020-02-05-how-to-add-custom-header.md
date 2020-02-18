@@ -4,6 +4,7 @@ title: How to add Host header?
 image: /img/portfolio/3.jpg
 tag: landing-page
 ---
+{% assign contact = site.data.contact %}
 
 In order to run our local web application properly over internet we may require to send custom `Host:` header to our local web server. By default we send `localhost` as the `Host:` header to local web application. Though, it can be chanaged and do so we need to perform the below steps
 1.  We need to export the environment variable and we run the below command on terminal:
