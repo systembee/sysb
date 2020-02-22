@@ -1,20 +1,18 @@
 <section class="container contact_form">
   {% assign contact = site.data.contact %}
-  <!-- <form action="{{contact.action}}" method="{{contact.method}}" id="mc-embedded-subscribe-form" name="{{contact.name}}"
-    class="validate text-center" target="_blank" novalidate> -->
   <form action="{{contact.action}}" method="{{contact.method}}" id="mc-embedded-subscribe-form" name="{{contact.name}}"
-    class="validate text-center" novalidate>
+    class="validate text-center" >
     <h2 class="section-heading text-center">{{contact.title}}</h2>
     <hr class="primary">
     <p>{{contact.descr}}</p>
     <div class=" row">
       <p class=" col-md-5">
         <input type="text" value="" name="{{contact.name1}}" class="form-control" id="{{contact.id1}}"
-          placeholder="Your Name">
+          placeholder="Your Name" required>
         </p>
         <p class=" col-md-5">
           <input type="email" value="" name="{{contact.name2}}" class="required email form-control" id="{{contact.id2}}"
-            placeholder="Your Email Address">
+            placeholder="Your Email Address" required>
         </p>
         <p class=" col-md-2">
           <input type="submit" value="Subscribe" name="SUBSCRIBE" id="mc-embedded-subscribe" class="btn button_s">
