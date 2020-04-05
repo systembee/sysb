@@ -6,3 +6,5 @@
   link: "#contact"
 - item: Blog
   link: /blog
+- item: Login
+  link: https://login.sysb.ai
