@@ -2,7 +2,7 @@
   jQuery(function($) {'use strict';
   
   // Contact form
-  var form = $('#main-contact-form');
+  var form = $('#mc-embedded-subscribe-form');
   form.submit(function(event){
   event.preventDefault();
   var form_status = $('<div class="form_status"></div>');
