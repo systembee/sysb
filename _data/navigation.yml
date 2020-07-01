@@ -7,4 +7,4 @@
 - item: Blog
   link: /blog
 - item: Login
-  link: "https://auth.sifar.io/login?client_id=1hpri46ib02u9bpdv5tpdfpgk1&response_type=code&scope=email+openid&redirect_uri=https://post.sifar.io"
+  link: "https://auth.sifar.io/login?client_id=1hpri46ib02u9bpdv5tpdfpgk1&response_type=code&scope=email+openid&redirect_uri=https://www.sysb.ai"
